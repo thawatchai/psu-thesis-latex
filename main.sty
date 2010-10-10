@@ -10,14 +10,39 @@
 \usepackage{indentfirst}
 \usepackage{url}
 
+%\usepackage[autosize]{dot2texi}
+%\usepackage{tikz}
+%\usetikzlibrary{shapes,arrows}
+
+%\usetikzlibrary{mindmap,trees}
+
+\usepackage{tikz}
+\usetikzlibrary{trees}
+%\usetikzlibrary{shapes,arrows}
+
+\usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{,}{,}
+
 %\usepackage{hyperref}
 
 \chapterfont{\centering}
 \chaptertitlefont{\centering}
-\subsubsectionfont{\centering}
 
 \renewcommand\contentsname{สารบัญ}
 \renewcommand\chaptername{บทที่}
+
+\def\listoftablesname{รายการตาราง}
+\def\listoftables{\chapter*{\listoftablesname\markboth
+ 			{\listoftablesname}{\listoftablesname}}\@starttoc{lot}}
+\def\tablename{ตาราง }
+\def\fnum@table{\tablename\thetable}
+
+\def\listoffiguresname{รายการภาพประกอบ}
+\def\listoffigures{\chapter*{\listoffiguresname\markboth
+ 			{\listoffiguresname}{\listoffiguresname}}\@starttoc{lof}}
+\def\figurename{ภาพประกอบ }
+\def\fnum@figure{\figurename\thefigure}
+
 %\renewcommand{\thechapter}{}
 %\renewcommand{\thesection}{}
 
@@ -27,13 +52,12 @@
 
 %\defaultfontfeatures{Mapping=tex-text,Scale=1.3}
 %\setromanfont[Mapping=tex-text]{TH SarabunPSK}
+%\setromanfont[Mapping=tex-text]{Angsana New}
+%\setromanfont[Mapping=tex-text]{Browallia New}
 
 \defaultfontfeatures{Mapping=tex-text,Scale=1}
 \setromanfont[Mapping=tex-text]{Kinnari}
 %\setromanfont[Mapping=tex-text]{Garuda}
-
-%\setromanfont[Mapping=tex-text]{Angsana New}
-%\setromanfont[Mapping=tex-text]{Browallia New}
 
 \newfontfamily{\ltcaps}[Scale=0.95]{Latin Modern Roman Caps}
 
