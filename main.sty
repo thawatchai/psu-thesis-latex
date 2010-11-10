@@ -2,7 +2,6 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 
-\usepackage{sectsty}
 \usepackage{indentfirst}
 \usepackage{url}
 \usepackage[final]{pdfpages}
@@ -64,6 +63,9 @@
 
 
 
+\usepackage{sectsty}
+\sectionfont{\large}
+
 
 
 %\usepackage{fontspec}
@@ -91,8 +93,8 @@
 %%= Control align and space for chapter names
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
-  {\centering\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+  {\centering\normalfont\Large\bfseries}{\chaptertitlename\ \thechapter}{10pt}{\Large}
+\titlespacing*{\chapter}{0pt}{0pt}{30pt}
 
 %%= Set paragraph indentation to 1 inch
 \setlength{\parindent}{1in}
@@ -125,12 +127,10 @@
 \newcommand{\frontchapterstyle}{\fancypagestyle{plain}{\fancyhead{}\fancyfoot[R]{(\thepage)}}}
 \newcommand{\mainchapterstyle}{\fancypagestyle{plain}{\fancyhead{}\fancyfoot[R]{\thepage}}}
 
-%\usepackage{setspace}
-%\onehalfspace
-%\doublespace
 \linespread{1.1}
 
 \renewcommand{\labelenumii}{(\arabic{enumii})}
+\renewcommand{\labelenumiii}{\arabic{enumiii}.}
 
 \usepackage{enumitem}
 \setlist[1]{leftmargin=0em}
